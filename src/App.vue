@@ -1,0 +1,24 @@
+<script setup lang="ts">
+// This starter template is using Vue 3 <script setup> SFCs
+// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
+import Navigation from './components/Navigation.vue'
+import Menu from './components/Menu.vue'
+import Masthead from './components/Masthead.vue'
+</script>
+
+<template>
+  <Navigation />
+  <Menu />
+  <Masthead />
+</template>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
