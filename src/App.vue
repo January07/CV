@@ -4,12 +4,14 @@
 import Navigation from './components/Navigation.vue'
 import Menu from './components/Menu.vue'
 import Masthead from './components/Masthead.vue'
+import About from './components/About.vue'
 </script>
 
 <template>
   <Navigation />
   <Menu />
   <Masthead />
+  <About />
 </template>
 
 <style>
