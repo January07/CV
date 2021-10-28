@@ -1,16 +1,16 @@
 <template>
   <div class="side-menu">
     <a class="menu-item" href="https://www.facebook.com/profile.php?id=100006946336316" target="_blank" style="color: #1877f2">
-      <i class="fab fa-facebook animation" />
+      <i class="fab fa-facebook shake" />
     </a>
     <a class="menu-item" href="https://github.com/January07" target="_blank" style="color: #24292f">
-      <i class="fab fa-github animation" />
+      <i class="fab fa-github shake" />
     </a>
     <a class="menu-item" href="https://line.me/ti/p/RI1t0XyxYG" target="_blank" style="color: #00b900">
-      <i class="fab fa-line animation" />
+      <i class="fab fa-line shake" />
     </a>
     <a class="menu-item" href="tel:+886-971676017" target="_blank" style="color: #4cd863">
-      <i class="fas fa-phone-square-alt animation" />
+      <i class="fas fa-phone-square-alt shake" />
     </a>
   </div>
   <div class="back-top" v-if="scrollY !== 0" v-on:click="backTop">
@@ -58,7 +58,7 @@ export default {
     background-color: $light-gray;
     border: 1px solid white;
 
-    .animation:hover {
+    .shake:hover {
       animation-name: shake;
       animation-duration: 0.1s;
       animation-iteration-count: infinite;
@@ -74,15 +74,5 @@ export default {
   font-size: 2.5rem;
   cursor: pointer;
   z-index: 100;
-}
-
-@keyframes shake {
-  from {
-    transform: rotate(-10deg);
-  }
-
-  to {
-    transform: rotate(10deg);
-  }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <header class="masthead text-white" id="home">
     <div class="container">
-      <img class="masthead-avatar mb-5" src="/src/assets/images/masthead/avatar.png" alt="avatar">
+      <img class="masthead-avatar mb-3" src="/src/assets/images/masthead/avatar.png" alt="avatar">
       <h1 class="mb-0 focus-in">
         <span>&lt;b&gt;</span>
         Hello
@@ -37,12 +37,12 @@ export default {
 <style lang="scss" scoped>
 .masthead {
   background-color: $light-green;
-  padding-top: calc(6rem + 50px);
+  padding-top: 4.5rem;
   padding-bottom: 6rem;
 
   h1, p, a {
     font-weight: 700;
-    font-size: 1.95rem;
+    font-size: 1.65rem;
 
     span {
       color: $light-blue;
@@ -50,11 +50,11 @@ export default {
   }
 
   p, a {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
   }
 
   .masthead-avatar {
-    width: 15rem;
+    width: 13rem;
   }
 
   .focus-in {
@@ -76,24 +76,12 @@ export default {
 @media (min-width: 992px) {
   .masthead {
     h1 {
-      font-size: 4rem;
+      font-size: 3.75rem;
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
-  }
-}
-
-@keyframes focus-in {
-  from {
-    filter: blur(12px);
-    opacity: 0;
-  }
-
-  to {
-    filter: blur(0px);
-    opacity: 1;
   }
 }
 </style>

@@ -31,7 +31,7 @@ export default {
 
 <style lang="scss" scoped>
 .divider {
-  margin: 1.25rem 0 1.5rem;
+  margin: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;

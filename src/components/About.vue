@@ -77,6 +77,32 @@ export default {
         }
       ]
     }
+  },
+
+  mounted() {
+    const target = document.querySelectorAll('.timeline-panel')
+
+    const target1 = document.getElementsByClassName('timeline-image')[4]
+
+    const callback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (entry.target !== target1) {
+            entry.target.setAttribute('class', 'timeline-panel bounce-in-top')
+          } else {
+            entry.target.setAttribute('class', 'timeline-image heartbeat')
+          }
+        }
+      })
+    }
+
+    const options = {}
+
+    const observer = new IntersectionObserver(callback, options)
+    Array.prototype.forEach.call(target, function (item) {
+      observer.observe(item)
+    })
+    observer.observe(target1)
   }
 }
 </script>
@@ -138,6 +164,20 @@ section {
         padding: 0 20px 0 100px;
         text-align: left;
       }
+
+      .bounce-in-top {
+        animation-name: bounce-in-top;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+      }
+
+      .heartbeat {
+        animation-name: heartbeat;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 5;
+        animation-fill-mode: both;
+      }
     }
 
     li::before, li::after {
@@ -153,7 +193,7 @@ section {
   .timeline::before {
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 1%;
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
