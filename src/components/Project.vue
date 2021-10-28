@@ -156,6 +156,7 @@ section {
       color: white;
       background-color: $light-green;
       font-weight: 700;
+      box-shadow: none;
     }
 
     .btn:hover {

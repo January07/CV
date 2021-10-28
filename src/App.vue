@@ -6,6 +6,7 @@ import Menu from './components/Menu.vue'
 import Masthead from './components/Masthead.vue'
 import About from './components/About.vue'
 import Project from './components/Project.vue'
+import Skill from './components/Skill.vue'
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import Project from './components/Project.vue'
   <Masthead />
   <About />
   <Project />
+  <Skill />
 </template>
 
 <style>
