@@ -4,7 +4,7 @@
       <h2 class="mb-0">PROJECT</h2>
       <Divider v-bind:color="'white'" />
       <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-4 mb-5" v-for="(item, index) in items">
+        <div class="item col-md-6 col-lg-4 mb-5" v-for="(item, index) in items">
           <div class="card mx-auto" data-bs-toggle="modal" v-bind:data-bs-target="'#'+item.id">
             <img class="img-fluid" v-if="index === 0" src="/src/assets/images/project/01.png" v-bind:alt="item.id">
             <img class="img-fluid" v-if="index === 1" src="/src/assets/images/project/02.png" v-bind:alt="item.id">
@@ -19,7 +19,7 @@
 
     <!-- Modal -->
     <div class="modal fade" v-for="(item, index) in items" v-bind:id="item.id" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header border-0">
             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" />
@@ -112,6 +112,27 @@ export default {
     }
   },
 
+  mounted() {
+    const target = document.querySelectorAll('.item')
+
+    const callback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.setAttribute('class', 'item col-md-6 col-lg-4 mb-5 fade-in-bottom')
+        }
+      })
+    }
+
+    const options = {
+      threshold: 0.5
+    }
+
+    const observer = new IntersectionObserver(callback, options)
+    Array.prototype.forEach.call(target, function (item) {
+      observer.observe(item)
+    })
+  },
+
   methods: {
     jumpLink(url) {
       window.open(url)
@@ -131,6 +152,10 @@ section {
     line-height: 2rem;
   }
 
+  .item {
+    opacity: 0;
+  }
+
   .card {
     cursor: pointer;
     position: relative;
@@ -143,6 +168,13 @@ section {
 
   .card:hover {
     transform: scale(1.05, 1.05);
+  }
+
+  .fade-in-bottom {
+    animation-name: fade-in-bottom;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    animation-fill-mode: both;
   }
 
   .modal {
@@ -161,6 +193,7 @@ section {
 
     .btn:hover {
       background-color: $dark-green;
+      transform: scale(1.03);
     }
   }
 }

@@ -52,9 +52,7 @@ export default {
           xAxis: {},
           yAxis: {
             axisLabel: {
-              textStyle: {
-                fontSize: '8'
-              }
+              fontSize: '8'
             },
             type: 'category'
           },
@@ -92,9 +90,7 @@ export default {
           xAxis: {},
           yAxis: {
             axisLabel: {
-              textStyle: {
-                fontSize: '8'
-              }
+              fontSize: '8'
             },
             type: 'category'
           },
@@ -132,9 +128,7 @@ export default {
           xAxis: {},
           yAxis: {
             axisLabel: {
-              textStyle: {
-                fontSize: '8'
-              }
+              fontSize: '8'
             },
             type: 'category'
           },
@@ -182,8 +176,9 @@ section {
     box-shadow: none;
   }
 
-  .btn:hover {
+  .btn:hover, .btn:focus {
     background-color: $dark-green;
+    transform: scale(1.03);
   }
 }
 
