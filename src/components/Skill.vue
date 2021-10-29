@@ -10,12 +10,27 @@
       <button class="btn mx-1 mx-md-4" v-on:click="changeData(1)">Back-End</button>
       <button class="btn mx-md-4" v-on:click="changeData(2)">App & Else</button>
     </div>
+
+    <!-- Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 111">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="10000">
+        <div class="toast-header">
+          <i class="fas fa-lightbulb me-2" />
+          <strong class="me-auto">Tip</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" />
+        </div>
+        <div class="toast-body">
+          If the Y axis text is not clear, you can click on the bar or move the mouse to the top of the bar.
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
 import Divider from './Divider.vue'
 import Chart from './Chart.vue'
+import { Toast } from 'bootstrap'
 
 export default {
   name: "Skill",
@@ -149,6 +164,28 @@ export default {
 
   mounted() {
     this.chartData = this.items[0]
+
+    const target = document.getElementById('skill')
+
+    const toastLive = document.getElementById('liveToast')
+
+    const callback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const toast = new Toast(toastLive)
+
+          toast.show()
+          observer.unobserve(target)
+        }
+      })
+    }
+
+    const options = {
+      threshold: 0.8
+    }
+
+    const observer = new IntersectionObserver(callback, options)
+    observer.observe(target)
   },
 
   methods: {
@@ -180,6 +217,11 @@ section {
     background-color: $dark-green;
     transform: scale(1.03);
   }
+
+  .toast {
+    background-color: $light-gray;
+    width: 330px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -192,6 +234,10 @@ section {
     .btn {
       font-size: 1.25rem;
       padding: 0.5rem 1rem;
+    }
+
+    .toast {
+      width: 350px;
     }
   }
 }

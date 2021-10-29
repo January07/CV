@@ -7,6 +7,7 @@ import Masthead from './components/Masthead.vue'
 import About from './components/About.vue'
 import Project from './components/Project.vue'
 import Skill from './components/Skill.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import Skill from './components/Skill.vue'
   <About />
   <Project />
   <Skill />
+  <Footer />
 </template>
 
 <style>
