@@ -2,7 +2,7 @@
 
 Hello, my name is 王逸竣（Yi-Chun Wang）, a web developer. This is my personal website. It mentions my education and work experience, the projects I have participated in, etc.
 
-<img src="public/website.png" alt="Website" height="500px" width="500px"> <img src="public/mobile.png" alt="Mobile" height="500px" width="280px">
+<img src="public/website.png" alt="Website" height="450px" width="450px"> <img src="public/mobile.png" alt="Mobile" height="450px" width="250px">
 
 ## Live Demo
 
