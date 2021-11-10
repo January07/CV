@@ -7,6 +7,10 @@ export default defineConfig({
 
   base: '/CV/',
 
+  // server: {
+  //   host: '0.0.0.0'
+  // },
+
   css: {
     preprocessorOptions: {
       scss: {

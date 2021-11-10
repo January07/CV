@@ -1,11 +1,36 @@
-# Vue 3 + Typescript + Vite
+# CV
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Hello, my name is 王逸竣（Yi-Chun Wang）, a web developer. This is my personal website. It mentions my education and work experience, the projects I have participated in, etc.
 
-## Recommended IDE Setup
+<img src="public/website.png" alt="Website" height="500px" width="500px"> <img src="public/mobile.png" alt="Mobile" height="500px" width="280px">
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+## Live Demo
 
-## Type Support For `.vue` Imports in TS
+🔗 [My Website](https://january07.github.io/CV/)
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+## Requirements
+
+* Node 16
+* Git
+* Vue 3 + Typescript + Vite
+
+## Common setup
+
+Clone the repo and install the dependencies.
+
+```bash
+git clone https://github.com/January07/CV.git
+```
+
+Open IDE and create a new project from the just downloaded source.
+
+## Install
+
+This project uses [node](https://nodejs.org/) and [npm](https://www.npmjs.com/). Go check them out if you don't have them locally installed.
+
+```bash
+$ npm install
+$ npm run dev
+```
+
+Open http://localhost:3000/CV/ and take a look around.
