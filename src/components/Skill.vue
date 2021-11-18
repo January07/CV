@@ -181,7 +181,7 @@ export default {
     }
 
     const options = {
-      threshold: 0.8
+      threshold: 0.75
     }
 
     const observer = new IntersectionObserver(callback, options)

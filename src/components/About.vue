@@ -96,7 +96,9 @@ export default {
       })
     }
 
-    const options = {}
+    const options = {
+      threshold: 0.25
+    }
 
     const observer = new IntersectionObserver(callback, options)
     Array.prototype.forEach.call(target, function (item) {
@@ -163,12 +165,14 @@ section {
         width: 100%;
         padding: 0 20px 0 100px;
         text-align: left;
+        visibility: hidden;
       }
 
       .bounce-in-top {
         animation-name: bounce-in-top;
         animation-duration: 1.1s;
         animation-fill-mode: both;
+        visibility: visible;
       }
 
       .heartbeat {
