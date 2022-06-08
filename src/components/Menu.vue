@@ -1,6 +1,6 @@
 <template>
   <div class="side-menu">
-    <a class="menu-item" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=at840107@gmail.com" target="_blank" style="color: black">
+    <a class="menu-item" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=ycWang0107@gmail.com" target="_blank" style="color: black">
       <i class="far fa-envelope shake" />
     </a>
     <a class="menu-item" href="https://github.com/January07" target="_blank" style="color: #24292f">

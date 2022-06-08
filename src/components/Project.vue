@@ -106,7 +106,7 @@ export default {
           title: 'SELF MADE APP',
           content: 'This is my first application. It contains a complete login and registration system. After logging in, there is a news list inside, which uses the NewsAPI to get the headlines from the API.',
           technology: 'Android + Kotlin + Firebase + Retrofit 2',
-          url: 'https://u.pcloud.link/publink/show?code=XZ6i3lXZqS945P5hcwVp9KRQD403Ah2AXsQy'
+          url: 'https://u.pcloud.link/publink/show?code=XZAf4zVZLo50BDzzDUkzRqI2Plf4mb51Np3k'
         }
       ]
     }

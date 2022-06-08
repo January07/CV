@@ -56,11 +56,11 @@ export default {
           dataset: {
             source: [
                 ['product', 'score'],
-                ['Vue.js', '5'],
-                ['jQuery', '5'],
-                ['JS/TS', '6'],
+                ['Vue.js', '7'],
+                ['jQuery', '6'],
+                ['JS/TS', '7'],
                 ['RWD', '8'],
-                ['SCSS', '8'],
+                ['SCSS', '6'],
                 ['HTML', '9']
             ]
           },

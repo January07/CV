@@ -8,8 +8,8 @@
           <div class="timeline-image">
             <img class="rounded-circle img-fluid" v-if="index === 0" src="/src/assets/images/about/01.png" v-bind:alt="index+1">
             <img class="rounded-circle img-fluid" v-if="index === 1" src="/src/assets/images/about/02.png" v-bind:alt="index+1">
-            <img class="rounded-circle img-fluid" v-if="index === 2" src="/src/assets/images/about/03.png" v-bind:alt="index+1">
-            <img class="rounded-circle img-fluid" v-if="index === 3" src="/src/assets/images/about/04.png" v-bind:alt="index+1">
+            <img class="rounded-circle img-fluid" v-if="index === 2" src="/src/assets/images/about/04.png" v-bind:alt="index+1">
+            <img class="rounded-circle img-fluid" v-if="index === 3" src="/src/assets/images/about/05.png" v-bind:alt="index+1">
           </div>
           <div class="timeline-panel">
             <div>
@@ -63,17 +63,23 @@ export default {
           subheading: 'Information Management',
           body: 'I have taken many important courses here, such as data structure and system analysis, and also wrote some small works. During this time, I took PHP and JavaScript as my main learning direction. This is a painful and happy time.'
         },
+        // {
+        //   year: '2019 - 2020',
+        //   heading: 'Android Developer',
+        //   subheading: 'eCATCH Automation Co., LTD.',
+        //   body: 'This is my first job, mainly using Kotlin to develop Android App. Because I have taken a JAVA course in university before, it is not difficult for me to learn Kotlin. It was also during this time that I started to really understand git multi-person collaboration.'
+        // },
         {
-          year: '2019 - 2020',
-          heading: 'Android Developer',
-          subheading: 'eCATCH Automation Co., LTD.',
-          body: 'This is my first job, mainly using Kotlin to develop Android App. Because I have taken a JAVA course in university before, it is not difficult for me to learn Kotlin. It was also during this time that I started to really understand git multi-person collaboration.'
-        },
-        {
-          year: '2020 - Present',
+          year: '2020 - 2021',
           heading: 'Web Developer',
           subheading: 'Housetube LTD.',
           body: 'This is where my technology has really advanced by leaps and bounds. I used a lot of front-end and back-end technologies here, not only for website development, but also for the company\'s Android App. I feel that I have a deeper understanding of programming.'
+        },
+        {
+          year: '2021 - Present',
+          heading: 'Front-End Developer',
+          subheading: 'NTT DATA Taiwan Co., LTD.',
+          body: 'I mainly use the Vue.js framework for front-end development here, but because it is a product of a consulting company, it is inconvenient to show it in later projects. The biggest takeaway here is that it\'s fun to work with different back-end developers.'
         }
       ]
     }
