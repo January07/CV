@@ -152,6 +152,10 @@ section {
     line-height: 2rem;
   }
 
+  img {
+    vertical-align: baseline;
+  }
+
   .item {
     opacity: 0;
   }
