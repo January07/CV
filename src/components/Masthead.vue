@@ -13,7 +13,7 @@
       <Divider v-bind:color="'white'" />
       <p class="mb-0 focus-in delay">Front-End Developer - Back-End Developer - Android Developer</p>
       <div class="mt-4 focus-in delay">
-        <a class="btn btn-outline-light border-2" href="https://drive.google.com/file/d/16p-MjMeogOfDv0yLyA7IZghuaTM6hkcQ/view?usp=sharing" target="_blank">
+        <a class="btn btn-outline-light border-2" href="https://drive.google.com/file/d/1B2YvJmgho8cU7gNO_SpeePLPX5Z-3QmO/view?usp=sharing" target="_blank">
           <i class="fas fa-download me-2" />
           Download CV
         </a>
